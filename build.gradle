@@ -35,11 +35,20 @@ repositories {
         name "BASE"
         url "http://maven.blamejared.com"
     }
+
+    maven {
+        name 'DVS1 Maven FS'
+        url 'http://dvs1.progwml6.com/files/maven'
+    }
 }
+
+
 
 dependencies {
 	deobfCompile "MineTweaker3:MineTweaker3-MC1112-Main:1.11.2-3.0.26.111"
 	compile 'LatMod:FTBLib:1.1x-3.6.5:api'
+	deobfCompile "slimeknights.mantle:Mantle:1.11.2-1.2.0.25"
+    deobfCompile "slimeknights:TConstruct:1.11.2-2.7.1.34"
 }
 
 

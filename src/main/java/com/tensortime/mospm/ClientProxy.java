@@ -10,4 +10,6 @@ public class ClientProxy extends CommonProxy {
     public boolean isSinglePlayer() {
         return Minecraft.getMinecraft().isSingleplayer();
     }
+    
+    
 }

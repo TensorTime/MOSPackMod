@@ -4,4 +4,7 @@ public class ServerProxy extends CommonProxy {
     public boolean isSinglePlayer() {
         return false;
     }
+    
+    
+    
 }
