@@ -18,8 +18,12 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import slimeknights.tconstruct.TConstruct;
 import slimeknights.tconstruct.library.Util;
 import teamroots.embers.RegistryManager;
+import com.thexfactor117.levels.config.Config;
+import com.thexfactor117.levels.util.NBTHelper;
+import com.thexfactor117.levels.util.WeaponHelper;
 
-@Mod(modid = "mospm", name = "MOSPack Mod", version = "0.2", dependencies = "required-after:crafttweaker;required-after:ftbl;required-after:tconstruct", useMetadata = false)
+
+@Mod(modid = "mospm", name = "MOSPack Mod", version = "0.3", dependencies = "required-after:crafttweaker;required-after:ftbl;required-after:tconstruct;required-after:embers;required-after:levels", useMetadata = false)
 public class MOSPM {
 	
 	@Instance

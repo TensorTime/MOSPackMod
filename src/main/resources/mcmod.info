@@ -1,19 +1,22 @@
 [
 {
-  "modid": "MOSPM",
-  "name": "MOSPackMod",
+  "modid": "mospm",
+  "name": "MOSPack Mod",
   "description": "A mod developed for the My Own Sink pack on Curse",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "https://github.com/TensorTime/MOSPackMod",
   "updateUrl": "",
   "authorList": ["TensorTime"],
-  "credits": "The Forge and FML guys, for making this example",
+  "credits": "Jared for the FTB Tweaks code, mDyio for Tinkers Construct and elucent for Embers",
   "logoFile": "",
   "screenshots": [],
   "dependencies": [
     "crafttweaker",
     "modtweaker",
+    "tconstruct",
+    "embers",
+    "levels",
     "ftbl"
   ]
 }
