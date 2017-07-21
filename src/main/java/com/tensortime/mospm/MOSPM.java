@@ -2,6 +2,7 @@
 package com.tensortime.mospm;
 
 import com.tensortime.mospm.integrations.Embers;
+import com.tensortime.mospm.integrations.Levels;
 import com.tensortime.mospm.integrations.TConstructHelper;
 
 import net.minecraft.init.Blocks;
@@ -18,12 +19,9 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import slimeknights.tconstruct.TConstruct;
 import slimeknights.tconstruct.library.Util;
 import teamroots.embers.RegistryManager;
-import com.thexfactor117.levels.config.Config;
-import com.thexfactor117.levels.util.NBTHelper;
-import com.thexfactor117.levels.util.WeaponHelper;
 
 
-@Mod(modid = "mospm", name = "MOSPack Mod", version = "0.3", dependencies = "required-after:crafttweaker;required-after:ftbl;required-after:tconstruct;required-after:embers;required-after:levels", useMetadata = false)
+@Mod(modid = "mospm", name = "MOSPack Mod", version = "0.5", dependencies = "required-after:crafttweaker;required-after:ftbl;required-after:tconstruct;required-after:embers;required-after:levels", useMetadata = false)
 public class MOSPM {
 	
 	@Instance
@@ -32,10 +30,15 @@ public class MOSPM {
     @SidedProxy(clientSide="com.tensortime.mospm.ClientProxy", serverSide="com.tensortime.mospm.ServerProxy")
     public static CommonProxy proxy;
     
+    
+    
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
     	Embers.integrate();
+        Levels.init();    	
+    	
+    
     }
     
     @EventHandler

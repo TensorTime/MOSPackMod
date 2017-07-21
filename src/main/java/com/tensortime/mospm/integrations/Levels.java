@@ -17,6 +17,11 @@ import net.minecraftforge.fml.common.gameevent.TickEvent.Phase;
 import net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent;
 
 public class Levels {
+
+		public static void init ()
+		{
+			
+		}
 	
 		@SubscribeEvent
 		public void onCreateWeapon (PlayerTickEvent weaponEvent)
