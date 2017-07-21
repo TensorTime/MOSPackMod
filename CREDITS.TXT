@@ -1,5 +1,5 @@
 
-Code from FTB Tweaks by jaredlll08 to fix packmode setting.
+Code from FTB Tweaks by jaredlll08 to fix packmode setting along with the FTB team for the FTBLib code that makes it work.
 This will be removed when the original mod is updated and working but replaces the mod temporarily.
 
 SlimeKnights for Tinker's Construct
