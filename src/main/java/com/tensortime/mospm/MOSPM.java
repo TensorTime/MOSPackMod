@@ -1,6 +1,7 @@
 
 package com.tensortime.mospm;
 
+import com.tensortime.mospm.integrations.Embers;
 import com.tensortime.mospm.integrations.TConstructHelper;
 
 import net.minecraft.init.Blocks;
@@ -18,7 +19,7 @@ import slimeknights.tconstruct.TConstruct;
 import slimeknights.tconstruct.library.Util;
 import teamroots.embers.RegistryManager;
 
-@Mod(modid = "mospm", name = "MOSPack Mod", version = "0.1", dependencies = "required-after:crafttweaker;required-after:ftbl;required-after:tconstruct", useMetadata = false)
+@Mod(modid = "mospm", name = "MOSPack Mod", version = "0.2", dependencies = "required-after:crafttweaker;required-after:ftbl;required-after:tconstruct", useMetadata = false)
 public class MOSPM {
 	
 	@Instance
@@ -30,9 +31,7 @@ public class MOSPM {
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-    	ItemStack caminiteBrick = new ItemStack(RegistryManager.brick_caminite);
-    	ItemStack caminiteBrickBlend = new ItemStack(RegistryManager.blend_caminite);
-    	TConstructHelper.addDryingRecipe(caminiteBrickBlend, caminiteBrick, 120);
+    	Embers.integrate();
     }
     
     @EventHandler
