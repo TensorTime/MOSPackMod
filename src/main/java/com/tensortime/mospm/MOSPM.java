@@ -2,6 +2,7 @@
 package com.tensortime.mospm;
 
 import com.tensortime.mospm.integrations.Embers;
+import com.tensortime.mospm.integrations.Levels;
 import com.tensortime.mospm.integrations.TConstructHelper;
 
 import net.minecraft.init.Blocks;
@@ -19,7 +20,9 @@ import slimeknights.tconstruct.TConstruct;
 import slimeknights.tconstruct.library.Util;
 import teamroots.embers.RegistryManager;
 
+
 @Mod(modid = "mospm", name = "MOSPack Mod", version = "0.6", dependencies = "required-after:crafttweaker;required-after:ftbl;required-after:tconstruct;required-after:levels;required-after:embers", useMetadata = false)
+
 public class MOSPM {
 	
 	@Instance
@@ -28,10 +31,15 @@ public class MOSPM {
     @SidedProxy(clientSide="com.tensortime.mospm.ClientProxy", serverSide="com.tensortime.mospm.ServerProxy")
     public static CommonProxy proxy;
     
+    
+    
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
     	Embers.integrate();
+        Levels.init();    	
+    	
+    
     }
     
     @EventHandler
