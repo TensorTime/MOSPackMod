@@ -19,7 +19,7 @@ import slimeknights.tconstruct.TConstruct;
 import slimeknights.tconstruct.library.Util;
 import teamroots.embers.RegistryManager;
 
-@Mod(modid = "mospm", name = "MOSPack Mod", version = "0.2", dependencies = "required-after:crafttweaker;required-after:ftbl;required-after:tconstruct", useMetadata = false)
+@Mod(modid = "mospm", name = "MOSPack Mod", version = "0.6", dependencies = "required-after:crafttweaker;required-after:ftbl;required-after:tconstruct;required-after:levels;required-after:embers", useMetadata = false)
 public class MOSPM {
 	
 	@Instance

@@ -8,12 +8,15 @@
   "url": "https://github.com/TensorTime/MOSPackMod",
   "updateUrl": "",
   "authorList": ["TensorTime"],
-  "credits": "The Forge and FML guys, for making this example",
+  "credits": "The Mod Authors of Tinker's Construct, Embers, Levels and FTB Lib.  Thanks to Jared008l for packmode code in FTB Tweaks.",
   "logoFile": "",
   "screenshots": [],
   "dependencies": [
     "crafttweaker",
     "modtweaker",
+    "embers",
+    "tconstruct",
+    "levels",
     "ftbl"
   ]
 }

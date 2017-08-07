@@ -11,6 +11,9 @@ public class Embers {
 		ItemStack caminiteBrick = new ItemStack(RegistryManager.brick_caminite);
 		ItemStack caminiteBrickBlend = new ItemStack(RegistryManager.blend_caminite);
 
+		ItemStack caminitePlateRaw = new ItemStack(RegistryManager.plate_caminite_raw);
+		ItemStack caminitePlate = new ItemStack(RegistryManager.plate_caminite);
+		
 		ItemStack stampPlateRaw= new ItemStack(RegistryManager.stamp_plate_raw);
 		ItemStack stampPlate= new ItemStack(RegistryManager.stamp_plate);
 		
@@ -21,6 +24,7 @@ public class Embers {
 		ItemStack stampFlat= new ItemStack(RegistryManager.stamp_flat);
 		
 		TConstructHelper.addDryingRecipe(caminiteBrickBlend, caminiteBrick, 120);
+		TConstructHelper.addDryingRecipe(caminitePlateRaw, caminitePlate, 120);
 		TConstructHelper.addDryingRecipe(stampPlateRaw, stampPlate, 240);
 		TConstructHelper.addDryingRecipe(stampBarRaw, stampBar, 240);
 		TConstructHelper.addDryingRecipe(stampFlatRaw, stampFlat, 240);
