@@ -1,4 +1,4 @@
-package com.tensortime.mospm;
+package com.tensortime.mospm.proxy;
 
 public class ServerProxy extends CommonProxy {
     public boolean isSinglePlayer() {

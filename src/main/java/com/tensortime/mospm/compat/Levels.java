@@ -1,4 +1,4 @@
-package com.tensortime.mospm.integrations;
+package com.tensortime.mospm.compat;
 
 import com.thexfactor117.levels.config.Config;
 import com.thexfactor117.levels.util.NBTHelper;

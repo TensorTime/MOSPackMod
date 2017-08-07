@@ -1,4 +1,4 @@
-package com.tensortime.mospm.integrations;
+package com.tensortime.mospm.compat;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;

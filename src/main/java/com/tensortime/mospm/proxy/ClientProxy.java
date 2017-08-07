@@ -1,4 +1,4 @@
-package com.tensortime.mospm;
+package com.tensortime.mospm.proxy;
 
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.fml.relauncher.Side;

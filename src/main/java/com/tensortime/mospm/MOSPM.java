@@ -1,9 +1,10 @@
 
 package com.tensortime.mospm;
 
-import com.tensortime.mospm.integrations.Embers;
-import com.tensortime.mospm.integrations.Levels;
-import com.tensortime.mospm.integrations.TConstructHelper;
+import com.tensortime.mospm.compat.Embers;
+import com.tensortime.mospm.compat.Levels;
+import com.tensortime.mospm.compat.TConstructHelper;
+import com.tensortime.mospm.proxy.CommonProxy;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
